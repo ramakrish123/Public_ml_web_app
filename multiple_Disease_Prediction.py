@@ -21,11 +21,10 @@ st.set_page_config(page_title="Health Assistant",
 
 # loading the saved models
 
-diabetes_model = pickle.load(open("D:/ml files/multiple disease prediction/trained_model.sav", 'rb'))
+diabetes_model = pickle.load(open("trained_model.sav", 'rb'))
+heart_disease_model = pickle.load(open('Heart_Disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open("Parkinson_model.sav", 'rb'))
 
-heart_disease_model = pickle.load(open('D:/ml files/multiple disease prediction/Heart_Disease_model.sav', 'rb'))
-
-parkinsons_model = pickle.load(open("D:/ml files/multiple disease prediction/Parkinson_model.sav", 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
